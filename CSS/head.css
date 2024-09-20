@@ -17,6 +17,7 @@ li a {
       font-family: inherit;
       color: white;
       padding: 1em 1em;
+      margin: 10px;
       outline: none;
       border: none;
       background-color: black;
@@ -24,28 +25,46 @@ li a {
       transition: color 0.4s ease-in-out;
     text-decoration: none;
 }
+
 li a::before {
-      content: '';
-      z-index: -1;
-      position: absolute;
-      top: 100%;
-      right: 100%;
-      width: 1em;
-      height: 1em;
-      border-radius: 50%;
-      background-color: #3cefff;
-      transform-origin: center;
-      transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
-      transition: transform 0.45s ease-in-out;
-}
-
-
-li a:hover {
-    cursor: pointer;
-      color: #161616;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
 }
 
 li a:hover::before {
-      transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 
+li.bar-main a::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+
+li.bar-main a:hover {
+cursor: pointer;
+  color: #161616;
+}
+
+li.bar-main a:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
