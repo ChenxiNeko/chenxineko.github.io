@@ -1,0 +1,58 @@
+.roll-tag {
+    display: none;
+    transition: .1s all;
+    width: 100%;
+    position: relative;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.roll-tag.active {
+    display: inline-block;
+}
+
+.roll-tag span {
+    position: absolute;
+    animation: tag-entering 0.1s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .28);
+    background-color: #EBDFE5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    white-space: nowrap;
+    transform-origin: center left;
+}
+
+.roll-tag span::before {
+    content: '#';
+    margin-right: 5px;
+    display: inline;
+}
+
+.roll-tag span.removing {
+    animation: tag-removing 0.1s ease-in-out;
+}
+
+
+@keyframes tag-entering {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes tag-removing {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+

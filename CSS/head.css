@@ -1,13 +1,21 @@
+.bar{
+  transition: all .3s;
+}
 .bar ul {
     list-style-type: none;
-    margin-left: 1%;
     padding: 0;
     overflow: hidden;
     position: fixed;
-    top: 0;
-    width: 98%;
-    background-color: rgba(00, 00, 00, 0.6);
-    border-radius: 6px;
+    z-index: 0;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    width:98%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .28);
+    
+    background-color: #EBDFE5;
+    border-radius: 15px;
 
 }
 
@@ -18,12 +26,11 @@
       position: relative;
       font-size: inherit;
       font-family: inherit;
-      color: white;
+      color: #54463f;
       padding: 1em;
       margin: 10px;
       outline: none;
       border: none;
-      background-color: rgba(00, 00, 00, 0);
       border-radius: 6px;
 
       overflow: hidden;
@@ -38,7 +45,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #3cefff;
+  background-color: #54463f;
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s ease;
@@ -58,7 +65,7 @@
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background-color: #3cefff;
+  background-color: #54463f;
   transform-origin: center;
   transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
   transition: transform 0.45s ease-in-out;
@@ -67,7 +74,7 @@
 
 .bar li.bar-main a:hover {
 cursor: pointer;
-  color: #161616;
+  color: white;
 }
 
 .bar li.bar-main a:hover::before {
@@ -75,12 +82,71 @@ cursor: pointer;
 }
 
 
-.readme div {
+.readme {
   margin-top: 120px;
   margin-left: 7.5%;
   margin-right: 7.5%;
 }
 
 .readme h1 {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .bar {
+    transition: all .5s;
+    display: none;
+  }
+  .readme {
+    margin-top: 65px;
+  }
+}
+
+
+
+.noadd {
+  display: none;
+  transition: .1s all;
+  width: 100%;
+  position: relative;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.noadd.active {
+  display: inline-block;
+}
+
+.noadd span {
+  font-size: 20px;
+	letter-spacing: 3px;
+  position: absolute;
+  animation: tag-entering 0.5s ease-in-out;
+  border: none;
+  display: inline-block;
+  white-space: nowrap;
+  transform-origin: center left;
+}
+
+
+@keyframes tag-entering {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
+@media screen and (max-width: 600px){
+.noadd span {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
 }

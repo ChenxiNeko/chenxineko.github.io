@@ -1,0 +1,13 @@
+.links * {
+    text-decoration: none;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li {
+    float: left;
+    margin: 30px;
+}
+  

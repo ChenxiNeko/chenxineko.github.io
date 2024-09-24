@@ -20,3 +20,5 @@ span:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
 }
+
+animate__fadeInDown
