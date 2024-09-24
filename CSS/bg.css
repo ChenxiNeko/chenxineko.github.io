@@ -1,5 +1,5 @@
 .background .cover {
-    position: absolute;
+    position: fixed;
     background-color: #EBDFE5;
     z-index: -1;
     top: 0;
