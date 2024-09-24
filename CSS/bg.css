@@ -1,5 +1,5 @@
 .background .cover {
-    position: fixed;
+    position: absolute;
     background-color: #EBDFE5;
     z-index: -1;
     top: 0;
@@ -14,12 +14,6 @@
     background-size: 50%;
 }
 
-@media screen and (max-height:1500px)
-{
-    .background .cover {
-        position: fixed;
-    }
-}
 
 @media screen and (max-width:600px)
 {
