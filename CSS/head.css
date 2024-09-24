@@ -13,10 +13,13 @@
     margin:0 auto;
     width:98%;
     box-shadow: 0 0 20px rgba(0, 0, 0, .28);
-    
     background-color: #EBDFE5;
     border-radius: 15px;
 
+}
+
+.bar ul.bar-active {
+    opacity: 0.7;
 }
 
 .bar li a {
