@@ -4,39 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>淺川 / 开源协议</title>
+    <style>
+		*::selection{
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 70px;
+			letter-spacing: 10px;
+		}
+        h2{
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+            line-height: 40px;
+		}
+		body {margin:0;}
+        
+
+		@media screen and (max-width: 600px){
+			h1 {
+			font-size: 40px;
+			letter-spacing: 7px;
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: 2px;
+            line-height: 25px;
+		}
+
+        h2{
+            font-size: 25px;
+        }
+
+
+    
+		}
+	</style>
+    <link rel="stylesheet" href="./CSS/opensource.css">
 </head>
 <body>
 
-    <div class="whatIs">
+    <div class="background">
+        <span class="d d1"></span>
+        <span class="d d2"></span>
+      </div>
+
+      <div class="bar">
+		<link rel="stylesheet" type="text/css" href="./CSS/head.css">
+		<ul class="topbar">
+			<li class="bar-main"><strong><a href="#">开源协议</a></strong></li>
+			<li><a href="./index.html">主页</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">BASTET</a></li>
+		</ul>
+	</div>
+
+    <div class="whatIs containment">
         <h1>什麽是開源精神？</h1>
-        <h2>GNU Free Software是这么定义“自由”的：</h2>
+        <h2>GNU Free Software 是这么定义“自由”的：</h2>
         <p>1. 出于任何目的使用该软件的自由； <br>2. 研究、修改该软件以使其实现你的目的的自由；
-            <br>源码的公开是实现此项的前提条件；
             <br>3. 传播该软件的拷贝以使其他人受益的自由；
             <br>4. 传播你所修改过的软件拷贝的自由。</p>
     </div>
 
-    <div class="howTo">
+    <div class="howTo containment">
         <h2>这个网站是基于以下开源协议，<br>在参考大量开源样例以及朋友们的帮助下完成的：</h2>
         <ul class="licenses">
-            <li><a href="#">Apache License 2.0</a></li>
-            <li><a href="#">MIT License</a></li>
-            <li><a href="#">GNU GPLv3</a></li>
+            <li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></li>
+            <li><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv3</a></li>
         </ul>
         <p>这个网站，同样基于 MIT License 在 Github 上开源，<br>并欢迎大家下载、分发与斧正w</p>
 
     </div>
 
-    <div class="usedLinks">
+    <div class="usedLinks containment">
         <h2>这个网站使用了下列开源技术、案例与项目：</h2>
         <ul>
-            <li>https://github.com/jolaleye/cssfx</li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>CSS3 FX <p style="line-height: normal;">Github.com/jolaleye/cssfx</p></li>
+            <li>Akari.fun <p style="line-height: normal;">Oriyukiakari.github.io</li>
+            <li>凑字数的 <p style="line-height: normal;">凑字数的凑字数的凑字数的</li>
         </ul>
 
     </div>
+
+
+    <style>
+        body {
+      background-color: #EBDFE5;
+      color: rgb(84, 70, 63);
+      }
+
+    .background {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .background span.d {
+      width: 30000px;
+      height: 30000px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -0%) rotate(-45deg);
+      transform-origin: 50% 0%;
+      display: inline-block;
+      background: rgba(84, 70, 63, .0295);
+    }
+
+    @keyframes rotate {
+      from {
+        transform: translate(-50%, -0%) rotate(-45deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(315deg);
+      }
+    }
+
+
+    @keyframes rotate_reverse {
+      from {
+        transform: translate(-50%, -0%) rotate(-30deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(330deg);
+      }
+    }
+
+    .background span.d1 {
+      transform: translate(-50%, -0%) rotate(-45deg);
+      animation: rotate linear 60s infinite;
+    }
+
+    .background span.d2 {
+      transform: translate(-50%, -0%) rotate(-30deg);
+      animation: rotate_reverse linear 75s infinite;
+    }
+
+  
+    </style>
 
 </p>
 </body>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淺川 / 荒原</title>
+    <style>
+		*::selection{
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 70px;
+			letter-spacing: 10px;
+		}
+        h2{
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+            line-height: 40px;
+		}
+		body {margin:0;}
+
+		@media screen and (max-width: 600px){
+			h1 {
+			font-size: 40px;
+			letter-spacing: 7px;
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: 2px;
+            line-height: 25px;
+		}
+
+        h2{
+            font-size: 25px;
+        }
+
+
+    
+		}
+
+        .containment {
+            margin: 100px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }     
+        
+        @media screen and (max-width: 1000px) {
+            .origin-story img {
+                width: 280px;
+                height: 295px;
+            }
+        }
+
+        
+	</style>
+</head>
+<body>
+
+    
+	<div class="bar">
+		<link rel="stylesheet" type="text/css" href="./CSS/head.css">
+		<ul class="topbar">
+			<li><a href="./index.html">主页</a></li>
+			<li><a href="./opensource.html">开源协议</a></li>
+			<li><a href="#">BLOG</a></li>
+			<li><a href="#">BASTET</a></li>
+		</ul>
+	</div>
+
+
+    <div class="background">
+        <span class="d d1"></span>
+        <span class="d d2"></span>
+        <span class="words">404<br>Not Found</span>
+      </div>
+
+    <div class="Notifiction containment">
+        <h1>孤島上的荒原</h1>
+        <p>在数据库中似乎没有找到你请求的内容，不过...</p>
+    </div>
+
+    <div class="whatIs containment">
+        <h2>什么是404 Not Found</h2>
+        <p>404是<strong>HTML状态码</strong>中的一部分，在服务器无法根据 
+            <br>客户端的请求找到资源（网页）时，服务器会返回 404 代码。 
+            <br>404页面是网站必备的一个页面，承载着用户体验与SEO优化的重任。</p>
+    </div>
+
+    <div class="origin-story containment">
+        <h2>404页面的由来</h2>
+        <p>据说在第三次科技革命之前，互联网的形态就是一个大型的中央数据库，
+            <br>这个数据库就设置在404房间里面。那时候所有的请求都是由人工手动完成的，
+            <br>如果在数据库中没有找到请求者所需要的文件，
+            <br>或者由于请求者写错了文件编号，用户就会得到一个返回信息：
+            <br>Room 404 : file not found。后来互联网兴起后，
+            <br>人们也就习惯了用404作为服务器未找到文件的错误代码了。
+            <br>当然实际考证传说中的room 404是不存在的。</p>
+            <img src="./Res/404.jpg" alt="404 Image" style="border-radius: 15px;" 
+            >
+    </div>
+
+    <style>
+        body {
+      background-color: #EBDFE5;
+      color: rgb(84, 70, 63);
+      }
+
+    .background {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .background span.d {
+      width: 30000px;
+      height: 30000px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -0%) rotate(-45deg);
+      transform-origin: 50% 0%;
+      display: inline-block;
+      background: rgba(84, 70, 63, .0295);
+    }
+
+    @keyframes rotate {
+      from {
+        transform: translate(-50%, -0%) rotate(-45deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(315deg);
+      }
+    }
+
+
+    @keyframes rotate_reverse {
+      from {
+        transform: translate(-50%, -0%) rotate(-30deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(330deg);
+      }
+    }
+
+    @keyframes noticeword {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.3;
+        }
+        100% {
+            opacity: 0;
+        }
+        
+    }
+
+    .background span.words {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        margin-right: 4%;
+        margin-bottom: 2%;
+        font-size: 200px;
+        line-height: normal;
+        color: rgb(84, 70, 63);
+        animation: noticeword ease-in-out 5s infinite;
+
+    }
+
+    .background span.d1 {
+      transform: translate(-50%, -0%) rotate(-45deg);
+      animation: rotate linear 60s infinite;
+    }
+
+    .background span.d2 {
+      transform: translate(-50%, -0%) rotate(-30deg);
+      animation: rotate_reverse linear 75s infinite;
+    }
+
+    @media screen and (max-width:1200px){
+        .background span.words {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        margin-right: 4%;
+        margin-bottom: 2%;
+        font-size: 60px;
+        line-height: normal;
+        color: rgb(84, 70, 63);
+        animation: noticeword ease-in-out 5s infinite;
+
+    }
+    }
+
+  
+    </style>
+
+</body>
+</html>
