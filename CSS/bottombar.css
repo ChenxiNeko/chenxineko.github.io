@@ -10,3 +10,13 @@
     margin: 30px;
     opacity: 0.7;
 }
+
+@media screen and (max-width: 600px){
+    .whereTogo {
+        display: none;
+    }
+    .bottombar li{
+        margin-left: 5%;
+        opacity: 0.7;
+    }
+}

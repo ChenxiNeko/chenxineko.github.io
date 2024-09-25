@@ -12,6 +12,7 @@
       left,
       right;
     background-size: 50%;
+    animation: onReadyBg 4s cubic-bezier(.19, 1, .22, 1);
 }
 
 
@@ -20,5 +21,14 @@
     .background .cover {
         position: fixed;
         background-size: 90%;
+    }
+}
+
+@keyframes onReadyBg {
+    0% {
+        filter: blur(100px);
+    }
+    100% {
+        filter: blur(0px);
     }
 }

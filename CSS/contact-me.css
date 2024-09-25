@@ -89,7 +89,7 @@
     opacity: 1;
   }
 
-  @media screen and (max-width: 1700px) {
+  @media screen and (max-width: 1850px) {
     .contact-me a>span::after{
         display: none;
         content: '';
@@ -99,7 +99,7 @@
     }
   }
 
-  @media screen and (max-width: 1460px) {
+  @media screen and (max-width: 1470px) {
     .contact-me a>span::after{
         display: none;
         content: '';
@@ -129,8 +129,7 @@
     }
 
     .contact-me a>span::after  {
-        font-size: 20px;
-        display: inline;
-        content: '>>';
+
+        display: none;
     }
   }

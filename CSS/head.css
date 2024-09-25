@@ -16,6 +16,7 @@
     background-color: #EBDFE5;
     border-radius: 15px;
     z-index : 1;
+    transition: all .5s;
 
 }
 
@@ -131,7 +132,7 @@ cursor: pointer;
   animation: tag-entering 0.5s ease-in-out;
   border: none;
   display: inline-block;
-  white-space: nowrap;
+  white-space: normal;
   transform-origin: center left;
 }
 
@@ -153,4 +154,22 @@ cursor: pointer;
   font-size: 18px;
   letter-spacing: 2px;
 }
+}
+
+
+
+@keyframes onReadyblur {
+  0% {
+    opacity: 0;
+    filter: blur(30px);
+
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  
+}
+.maincontainer {
+  animation: onReadyblur 3.5s cubic-bezier(.19, 1, .22, 1);
 }
