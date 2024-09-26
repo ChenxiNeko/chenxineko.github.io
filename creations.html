@@ -1,11 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>淺川 / 作品集</title>
+    <style>
+		*::selection{
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			font-size: 70px;
+			letter-spacing: 10px;
+		}
+        h2{
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+		p {
+			font-size: 20px;
+			letter-spacing: 2px;
+            line-height: 40px;
+		}
+		body {margin:0;}
+
+		@media screen and (max-width: 600px){
+			h1 {
+			font-size: 40px;
+			letter-spacing: 7px;
+		}
+		p {
+			font-size: 15px;
+			letter-spacing: 2px;
+            line-height: 25px;
+		}
+
+        h2{
+            font-size: 25px;
+        }
+
+
+    
+		}
+
+        .containment {
+            margin: 100px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }     
+        
+        @media screen and (max-width: 1000px) {
+            .origin-story img {
+                width: 280px;
+                height: 295px;
+            }
+        }
+
+        
+	</style>
 </head>
 <body>
+
     
+	<div class="bar">
+		<link rel="stylesheet" type="text/css" href="./CSS/head.css">
+		<ul class="topbar">
+			<li class="bar-main"><a href="javascript:void(0)"><strong>作品集</strong></a></li>
+			<li><a href="./index.html">主页</a></li>
+			<li><a href="./blog.html">部落格</a></li>
+			<li><a href="./opensource.html">开源协议</a></li>
+		</ul>
+	</div>
+
+
+    <div class="background">
+        <span class="d d1"></span>
+        <span class="d d2"></span>
+      </div>
+
+    <div class="Notifiction containment">
+        <h1>作品集</h1>
+        <p>某个瞬间，创意与灵感的迸发，交织出一首华美的乐章。</p>
+        <p>这里存放的是我的作品，也是对我来说弥足珍贵的回忆与梦想。</p>
+        <p>媒体内容将用<span style="color: #238cc0; ">蓝色</span>边栏表示，程序将用<span style="color: #2fa020;">绿色</span>边栏表示。</p>
+        <p>外部链接将用<span style="color: #b81515; ">红色</span>边栏表示，未定则以<strong>原色</strong>边栏表示。</p>
+        <p>您可以随意下载或分发此处提供的内容，但请遵守本站<a href="./opensource.html#aboutCreations" style="color: rgb(84, 70, 63); "><em>开源协议</em></a>中有关的表述。</p>
+    </div>
+
+    <div class="working containment">
+        <h2 class="textline">正在制作或构思的内容</h2>
+        <!-- 程序部分 -->
+         <div class="textline">
+            <div class="items prog">
+                <a href="javascript:void(0)">Codename: Simulator
+                    <p>一个基于Godot Engine制作的游戏</p></a>
+                
+             </div>
+    
+             <div class="items prog">
+                <a href="javascript:void(0)">岛 Island
+                    <p>正如你所见，就是这个页面本身</p></a>
+                
+             </div>
+    
+             <div class="items prog">
+                <a href="javascript:void(0)">想法 Ideas
+                    <p>该如何抓住稍纵即逝的灵感</p></a>
+                
+             </div>
+         </div>
+
+         <br>
+
+        <!-- 音乐部分 -->
+
+        <div class="textline">
+            <div class="items mus">
+                <a href="javascript:void(0)">Codename: Simulator OST
+                    <p>为正在制作的游戏创作的原声带</p></a>
+                
+            </div>
+    
+            <div class="items mus">
+                <a href="javascript:void(0)">在旅途的终点相会
+                    <p>在旅途中的所见与所想（暂未开始）</p></a>
+            </div>
+
+            <div class="items mus"><a href="https://music.163.com/album?id=141320472" target="_blank">失乐园 Paradise Lost
+                <p>自2022年开始制作的专辑。</p></a>
+            </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div class="finished containment">
+        <h2 class="textline">已经完成的内容</h2>
+        <!-- 音乐部分 -->
+
+        <div class="textline">
+            <div class="items mus">
+                <a href="https://github.com/ChenxiNeko/Selected-Disc-A" target="_blank">Selected 拾遗集 Disc A
+                    <p>过去制作的作品选集。下载约需50M流量</p></a>
+                
+            </div>
+    
+            <div class="items out">
+                <a href="https://music.163.com/#/artist?id=12287244" target="_blank">网易云歌手页 浅川晨曦
+                    <p>那里存放着的是我仍未消散的梦想</p></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <style>
+        body {
+      background-color: #EBDFE5;
+      color: rgb(84, 70, 63);
+      }
+
+      .items {
+        border-left: 5px solid;
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 100px;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 450px;
+
+      }
+      
+      .mus {
+        border-color: #238cc0;
+      }
+
+      .out {
+        border-color: #b81515;
+      }
+
+      .prog {
+        border-color: #2fa020;
+      }
+
+      .items a {
+        color: rgb(84, 70, 63); 
+        font-size: 30px;
+        text-decoration: none;
+        transition: all .5s;
+      }
+
+      .items a p {
+        font-size: 15px;
+        line-height: 0px;
+        margin-top: 10px;
+      }
+
+      .items a::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #54463f;
+        width: 0;
+        height: 100%;
+        transition: .2s all ease-in-out;
+    }
+
+    .mus a::before {
+        background-color: #238cc0;
+    }
+
+    .prog a::before {
+        background-color: #2fa020;
+    }
+
+    .out a::before{
+        background-color: #b81515;
+      }
+
+    .items:hover a {
+        color: aliceblue;
+    }
+
+    .items:hover a::before {
+        
+        width: 90%;
+    }
+
+
+    @media screen and (max-width:800px) {
+        .items {
+            margin-right: 5px;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+
+        .items:hover a::before {
+        width: 100%;
+    }
+        .items a {
+            font-size: 20px;
+        }
+
+        .items a p {
+            font-size: 12px;
+        }
+    }
+
+
+      .textline {
+        clear: both;
+      }
+
+    .background {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    .background span.d {
+      width: 30000px;
+      height: 30000px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -0%) rotate(-45deg);
+      transform-origin: 50% 0%;
+      display: inline-block;
+      background: rgba(84, 70, 63, .0295);
+    }
+
+    @keyframes rotate {
+      from {
+        transform: translate(-50%, -0%) rotate(-45deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(315deg);
+      }
+    }
+
+
+    @keyframes rotate_reverse {
+      from {
+        transform: translate(-50%, -0%) rotate(-30deg);
+      }
+
+      to {
+        transform: translate(-50%, -0%) rotate(330deg);
+      }
+    }
+
+
+    .background span.d1 {
+      transform: translate(-50%, -0%) rotate(-45deg);
+      animation: rotate linear 60s infinite;
+    }
+
+    .background span.d2 {
+      transform: translate(-50%, -0%) rotate(-30deg);
+      animation: rotate_reverse linear 75s infinite;
+    }
+
+
+  
+    </style>
+
 </body>
 </html>
